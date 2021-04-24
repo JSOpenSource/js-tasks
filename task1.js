@@ -21,3 +21,37 @@ function FooBar() {
         }
     }
 }
+
+// Sachin
+function fooBar(n){     
+  for(i=1;i<=n;i++) {
+      if (i%3==0 && i%5==0) string = 'FooBar';
+      else if (i%3==0) string = 'Foo'; 
+      else if (i%5==0) string = 'Bar'; 
+      else string = i;
+      console.log(string);
+  }
+}
+
+//Raj Bhat
+function foobar(n) {
+if(n>0){
+   
+    for(var i= 1; i<=n; i++) {
+        if((i%3== 0)&&(i%5==0)){
+            console.log("foobar");}
+        else if(i%5==0){
+            console.log("bar");}
+        else if(i%3==0){
+            console.log("foo");}
+       else{
+            console.log(i);
+        }
+    }
+}
+
+else{
+console.log("invalid number");}
+}
+
+foobar(5);

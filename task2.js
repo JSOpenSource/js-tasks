@@ -9,6 +9,8 @@
 // Output: [0,1,1, 2,3]
 
 // Solutions
+
+// Naveed
 console.log("Fibonacci Series:");
 
 function Fibonacci() {
@@ -21,3 +23,23 @@ function Fibonacci() {
         num2 = nextNum;
     }
 }
+
+//Raj Bhat
+function fibonacci(n){
+  if(n>0){
+    var x=0;
+    var y=1;
+    var fib=0;
+    for(var i=1;i<=n;i++){
+      console.log("fib number are");
+      console.log(x);
+      fib=x+y;
+      x=y;
+      y=fib;
+    } 
+  } 
+  else { 
+    console.log("invalid number");
+  }
+}
+fibonacci(5);
