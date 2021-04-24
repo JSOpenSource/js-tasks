@@ -65,3 +65,27 @@ function generateFibonacci(length){
       }
     return numbers;
 }
+
+//kuldip Mochi
+function genFibo(num){
+    let arr = [0,1];
+      //base case for num 0, 1 and 2
+      if(num<=0){
+        arr=[];
+      }
+      else if(num==1) {
+        arr = [0];
+      }  
+      else if(num==2) {
+        arr = [0,1];
+      }
+      else if(num>2)
+      {
+        for(i=2;i<num;i++){
+          arr[i]=arr[i-1]+arr[i-2];
+        }
+      }
+    return arr;
+}
+let fibArr = genFibo(6);
+console.log(fibArr)
