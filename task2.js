@@ -10,23 +10,36 @@
 
 // Solutions
 
+// Naveed
+console.log("Fibonacci Series:");
+
+function Fibonacci() {
+    const userEnteredNumber = document.getElementById('enteredNumber').value;
+    let num1 = 0, num2 = 1; nextNum = 0;
+    for(i = 0; i < userEnteredNumber; i++) {
+        console.log(num1);
+        nextNum = num1 + num2;
+        num1 = num2;
+        num2 = nextNum;
+    }
+}
+
 //Raj Bhat
 function fibonacci(n){
-if(n>0){
-var x=0;
-var y=1;
-var fib=0;
-for(var i=1;i<=n;i++){
-console.log("fib number are");
-console.log(x);
-fib=x+y;
-x=y;
-y=fib;
-}
-} 
- else
-{ 
-console.log("invalid number");
-}
+  if(n>0){
+    var x=0;
+    var y=1;
+    var fib=0;
+    for(var i=1;i<=n;i++){
+      console.log("fib number are");
+      console.log(x);
+      fib=x+y;
+      x=y;
+      y=fib;
+    } 
+  } 
+  else { 
+    console.log("invalid number");
+  }
 }
 fibonacci(5);
