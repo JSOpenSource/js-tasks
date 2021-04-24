@@ -30,3 +30,16 @@ function palindrome(str){
 }
 
 console.log(palindrome("kuddu k"))
+
+
+//Sachin
+function isPalindrome(string){
+  string=string.replace(/\s/g, ''); // remove one or more white spaces and convert to upper case for uniformity
+  for(i=0;i<string.length/2;i++){
+    if(!(string.charAt(i)===string.charAt(string.length-1-i))){
+      console.log(false);
+      return 0;
+    }
+  }
+  console.log(true);
+}
