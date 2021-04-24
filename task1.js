@@ -33,6 +33,9 @@ function fooBar(n){
   }
 }
 
+
+
+
 //Raj Bhat
 function foobar(n) {
 if(n>0){
@@ -53,5 +56,16 @@ if(n>0){
 else{
 console.log("invalid number");}
 }
-
+//Kuldip Mochi
+function fooBar(n){    
+  if(n>0){
+    for(let i=1;i<=n;i++) {
+      (i%3==0 && i%5==0) ? str = 'FooBar' : ((i%3==0)  ? str = 'Foo' : ((i%5==0) ? str = 'Bar' : str = i)) 
+      console.log(str)
+    }
+  }
+  else{
+      console.log("Invalid numebr")
+  }
+}
 foobar(5);
