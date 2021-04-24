@@ -9,3 +9,15 @@
 // Output: [0,1,1, 2,3]
 
 // Solutions
+console.log("Fibonacci Series:");
+
+function Fibonacci() {
+    const userEnteredNumber = document.getElementById('enteredNumber').value;
+    let num1 = 0, num2 = 1; nextNum = 0;
+    for(i = 0; i < userEnteredNumber; i++) {
+        console.log(num1);
+        nextNum = num1 + num2;
+        num1 = num2;
+        num2 = nextNum;
+    }
+}
