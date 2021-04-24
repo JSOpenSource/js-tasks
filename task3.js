@@ -9,3 +9,24 @@
 // Output: false
 
 // Solutions
+
+//Kuldip Mochi
+function palindrome(str){
+  let end = str.length-1;
+  let start=0;
+  while(start<end){
+    if(str[start]==' '){
+      start++;
+    }else if(str[end]==' '){
+      end--;
+    }else if(str[start]==str[end]){
+      start++;
+      end--;
+    }else{
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(palindrome("kuddu k"))
