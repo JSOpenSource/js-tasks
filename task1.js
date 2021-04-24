@@ -6,6 +6,7 @@
 
 // Solutions
 
+// Naveed
 function FooBar() {
     let userNumber = document.getElementById("userNumber").value;
     for(let i = 1; i <= userNumber; i++) {
