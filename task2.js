@@ -43,3 +43,25 @@ function fibonacci(n){
   }
 }
 fibonacci(5);
+
+//Sachin
+function generateFibonacci(length){
+    let numbers = [0,1];
+      
+      if(length<=0){
+        numbers=[];
+      }
+      else if(length==1) {
+        numbers = [0];
+      }  
+      else if(length==2) {
+        numbers = [0,1];
+      }
+      else if(length>2)
+      {
+        for(i=2;i<length;i++){
+          numbers[i]=numbers[i-1]+numbers[i-2];
+        }
+      }
+    return numbers;
+}
