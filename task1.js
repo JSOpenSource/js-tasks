@@ -5,3 +5,18 @@
 // Output: 1 2 Foo 4 Bar Foo 7 8 Foo Bar 11 Foo 13 14 FooBar
 
 // Solutions
+
+function FooBar() {
+    let userNumber = document.getElementById("userNumber").value;
+    for(let i = 1; i <= userNumber; i++) {
+        if ((i % 3 == 0) && (i % 5 == 0)) {
+            console.log("FooBar");
+        }else if (i % 5 == 0) {
+            console.log("Bar");
+        } else if (i % 3 == 0) {
+            console.log("Foo");
+        } else {
+            console.log(i);
+        }
+    }
+}
