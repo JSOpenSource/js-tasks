@@ -30,3 +30,15 @@ function palindrome(str){
 }
 
 console.log(palindrome("kuddu k"))
+
+// Naveed
+function Palindrome(text) {
+    let reversedString = text.toLowerCase().split('').reverse().join('');
+    if(text === reversedString) {
+        console.log(true)
+    }else {
+        console.log(fasle)
+    }
+}
+
+Palindrome('racecar');
