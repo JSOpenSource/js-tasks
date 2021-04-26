@@ -42,3 +42,24 @@ function Palindrome(text) {
 }
 
 Palindrome('racecar');
+
+//Anusha
+function palindrome(a) {
+    let str = ''
+    if (a.length == 0) {
+        return "invalid input"
+    }
+    for (let i = 0; i < a.length; i++){
+        str = a[i] + str
+    }
+
+    if (a == str) {
+        return true
+    }
+    else {
+        return false
+    }
+
+}
+
+console.log(palindrome('level'))
