@@ -69,3 +69,26 @@ function fooBar(n){
   }
 }
 foobar(5);
+
+//Anusha
+function FooBar(n) {
+if(n>0){
+for (let i = 1; i <= n; i++) {
+        // console.log(i)
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log('foobar')
+        }
+        else if (i % 3 == 0) {
+            console.log('foo')
+        }
+        else if (i%5==0) {
+            console.log('bar')
+        }
+         else{
+             console.log(i)
+         }
+    }
+    }
+    
+}
+console.log(FooBar(20))
