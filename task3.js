@@ -31,7 +31,6 @@ function palindrome(str){
 
 console.log(palindrome("kuddu k"))
 
-
 //Sachin
 function isPalindrome(string){
   string=string.replace(/\s/g, ''); // remove one or more white spaces and this is case sensitive
@@ -43,3 +42,36 @@ function isPalindrome(string){
   }
   console.log(true);
 }
+
+// Naveed
+function Palindrome(text) {
+    let reversedString = text.toLowerCase().split('').reverse().join('');
+    if(text === reversedString) {
+        console.log(true)
+    }else {
+        console.log(fasle)
+    }
+}
+
+Palindrome('racecar');
+
+//Anusha
+function palindrome(a) {
+    let str = ''
+    if (a.length == 0) {
+        return "invalid input"
+    }
+    for (let i = 0; i < a.length; i++){
+        str = a[i] + str
+    }
+
+    if (a == str) {
+        return true
+    }
+    else {
+        return false
+    }
+
+}
+
+console.log(palindrome('level'))

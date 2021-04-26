@@ -89,3 +89,22 @@ function genFibo(num){
 }
 let fibArr = genFibo(6);
 console.log(fibArr)
+
+//Anusha
+function fib(n){ 
+    if(n>0){
+        let num1=0;
+        let num2=1;
+        let fib=0
+        for(let i=1;i<=n;i++){
+            console.log(num1)
+            fib=num1+num2
+            num1=num2
+            num2=fib
+        }
+    }
+    else{
+        console.log('not valid')
+    }
+}
+console.log(fib(8))
