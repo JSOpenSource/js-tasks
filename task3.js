@@ -75,3 +75,25 @@ function palindrome(a) {
 }
 
 console.log(palindrome('level'))
+
+
+//
+//Raj-bhat
+
+function palindrome(string) {
+    var text = '';
+    if (string.length >0) {        
+    for (let i = 0; i< string.length; i++){
+        text = string[i] + text;    }
+    if (string == text) {
+        console.log("entered text is palindrome");
+    }
+    else {
+        console.log("entered text is  not a palindrome");
+    }
+}else{
+console.log("Empty text");
+}
+}
+
+palindrome('malayalam');
