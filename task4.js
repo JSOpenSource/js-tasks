@@ -64,3 +64,28 @@ function bubbleSort (array){
     return array
 } 
 console.log(bubbleSort([5,3,8,4,6]))
+
+//Naveen
+function bubbleSort(array) {
+	let isSwaped = true;
+	console.log(array);
+	for (var i = 0; i < array.length; i++) {
+		for (var j = 0; j < (array.length - i - 1); j++) {
+			(j == 0) ? console.log("Iteration " + i): null;
+			if (arr[j] > array[j + 1]) {
+				var temp = array[j];
+				array[j] = array[j + 1];
+				ararray = temp;
+				isSwaped = true;
+			}
+			console.log(array);
+		}
+		if (isSwaped === true) {
+			isSwaped = false;
+		} else {
+			return array;
+		}
+	}
+	return array;
+}
+
